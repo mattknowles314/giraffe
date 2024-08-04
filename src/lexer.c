@@ -7,12 +7,18 @@
 #define MAX_LENGTH 64
 
 bool isDelimeter(char chr) {
-    return(chr == ' ' || chr == '+' || chr == '-' ||
+    return (chr == ' ' || chr == '+' || chr == '-' ||
             chr == '*' || chr == '/' || chr == '.' ||
             chr == ';' || chr == '%' || chr == '<' ||
             chr == '>' || chr == '=' || chr == '(' ||
             chr == ')' || chr == '[' || chr == ']' ||
             chr == '{' || chr == '}');
+}
+
+bool isOperatior(char chr) {
+    return (chr == '+' || chr == '-' || chr == '*' ||
+            chr == '/' || chr == '<' || chr == '>' ||
+            chr == '=');
 }
 
 int main(){
